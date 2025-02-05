@@ -51,7 +51,7 @@ git clone https://github.com/jarekdanielak/dotfiles.git ~/.dotfiles
 ### Execute install script
 
 > [!NOTE]  
-> Your current config will be backed up in `~/.dotfiles-backup` directory. Refer to the [Uninstall](https://github.com/jarekdanielak/dotfiles?tab=readme-ov-file#uninstall) section to bring it back.
+> Your current config will be backed up in `~/.dotfiles-backup` directory. Refer to the [Uninstall](#uninstall) section to bring it back.
 
 ```sh
 bash ~/.dotfiles/install.sh
