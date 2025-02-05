@@ -2,16 +2,18 @@
 
 A collection of config files and tools to quickly set up a fresh macOS development environment, tailored for a JavaScript developer.
 
+![screenshot](preview.png)
+
 ## Content
 
 ### Essential tools
 
-- **Browsers**: [Brave](https://brave.com/), Google Chrome and Firefox.
+- **Browsers**: [Brave](https://brave.com/), Google Chrome, and Firefox.
 - **Editor**: [VSCode](https://code.visualstudio.com/) with JavaScript-oriented settings and essential plugins.
-- **Terminal**: [iTerm](https://iterm2.com/) with [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) shell and [Dracula](https://draculatheme.com/) inspired theme.
+- **Terminal**: [iTerm](https://iterm2.com/) with the [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) shell and [Dracula](https://draculatheme.com/)-inspired theme.
 - **Package manager**: [Homebrew](https://brew.sh/)
 - **Node version manager**: [n](https://github.com/tj/n)
-- **Git config**: default `--rebase` on pull, `autoStash` and VSCode as editor.
+- **Git config**: Default `--rebase` on pull, `autoStash`, and VSCode as the editor.
 
 <!-- 
 Nice to have
@@ -24,13 +26,13 @@ Nice to have
 ### CLI enhancements
 
 - [GitHub CLI](https://cli.github.com/) - GitHub tools.
-- [git-open](https://github.com/paulirish/git-open) - open repo remote in the browser.
-- [thefuck](https://github.com/nvbn/thefuck) - fix your last command.
-- [wget](https://www.gnu.org/software/wget/) - download files.
-- [zoxide](https://github.com/ajeetdsouza/zoxide) - better `cd`.
-- [ack](https://linux.die.net/man/1/ack) - better `grep`.
-- [bat](https://github.com/sharkdp/bat) - better `cat`.
-- [tldr](https://tldr.sh/) - better `man`.
+- [git-open](https://github.com/paulirish/git-open) - Open repo remote in the browser.
+- [thefuck](https://github.com/nvbn/thefuck) - Fix your last command.
+- [wget](https://www.gnu.org/software/wget/) - Download files.
+- [zoxide](https://github.com/ajeetdsouza/zoxide) - Better `cd`.
+- [ack](https://linux.die.net/man/1/ack) - Better `grep`.
+- [bat](https://github.com/sharkdp/bat) - Better `cat`.
+- [tldr](https://tldr.sh/) - Better `man`.
 
 ## Installation
 
@@ -42,13 +44,13 @@ Nice to have
 xcode-select --install
 ```
 
-### Clone the repo
+### Clone the Repo
 
 ```sh
 git clone https://github.com/jarekdanielak/dotfiles.git ~/.dotfiles
 ```
 
-### Execute install script
+### Execute Install Script
 
 > [!NOTE]  
 > Your current config will be backed up in `~/.dotfiles-backup` directory. Refer to the [Uninstall](#uninstall) section to bring it back.
@@ -57,7 +59,7 @@ git clone https://github.com/jarekdanielak/dotfiles.git ~/.dotfiles
 bash ~/.dotfiles/install.sh
 ```
 
-### Set git user
+### Set Git User
 
 ```sh
 git config --global user.name "name"
@@ -81,7 +83,7 @@ cp -f ~/.dotfiles-backup/.zshrc ~/
 cp -f ~/.dotfiles-backup/.gitconfig ~/
 ```
 
-### VSCode settings
+### VSCode Settings
 
 Copy `settings.json` back to VSCode User directory.
 
