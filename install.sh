@@ -8,6 +8,10 @@ else
     NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+# Homebrew backup
+echo "dotfiles: Backing up Homebrew packages"
+brew bundle dump --file="$HOME/.dotfiles-backup/Brewfile"
+
 # Homebrew bundle
 echo "dotfiles: Installing Homebrew bundle"
 brew bundle --file="./brew/Brewfile"
