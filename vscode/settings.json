@@ -1,24 +1,24 @@
 {
   "[css]": {
-      "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[html]": {
-      "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[javascript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "[scss]": {
-      "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[typescript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescriptreact]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.linkedEditing": true,
@@ -29,7 +29,6 @@
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
   "eslint.validate": [
     "javascript"
@@ -37,8 +36,5 @@
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "git.autofetch": true,
-  "projectManager.git.baseFolders": [
-      "~/code"
-  ]
+  "git.autofetch": true
 }
