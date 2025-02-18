@@ -24,6 +24,9 @@
   "editor.linkedEditing": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.minimap.enabled": false,
