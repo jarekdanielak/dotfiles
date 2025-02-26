@@ -13,14 +13,8 @@ Includes my favorite browsers, code editor, a shiny terminal and a bunch of CLI 
 - **Browsers**: [Brave](https://brave.com/), Google Chrome and Firefox.
 - **Editor**: [VSCode](https://code.visualstudio.com/) with JavaScript-oriented settings and essential plugins.
 - **Terminal**: [iTerm](https://iterm2.com/) with the [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) shell and [Dracula](https://draculatheme.com/)-inspired theme.
-
-<!-- 
-Nice to have
 - **Windows manager**: [Rectangle](https://rectangleapp.com/)
-- **Clipboard manager**: [PastePal](https://github.com/IndieGoodies/PastePal)
-- **Scroll fix**: [UnnaturalScrollWheels](https://github.com/ther0n/UnnaturalScrollWheels)
-- **Screenshot tool**: [CleanShotX](https://cleanshot.com/)
--->
+- **Clipboard manager**: [Maccy](https://maccy.app/)
 
 ### CLI tools
 
