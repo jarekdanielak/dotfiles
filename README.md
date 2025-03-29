@@ -1,24 +1,22 @@
 # Dotfiles
 
-A collection of config files and tools to quickly set up a fresh macOS development environment, tailored for a JavaScript developer.
+A collection of config files to quickly set up a fresh macOS development environment, tailored for a JavaScript developer.
 
-Includes my favorite browsers, code editor, a shiny terminal and a bunch of CLI tools.
-
-<img src="preview.png" width="85%" />
+Includes my favorite browsers, code editor, a shiny terminal and a bunch of CLI and quality of life tools.
 
 ## Content
 
 ### Essentials
 
-- **Browsers**: [Brave](https://brave.com/), Google Chrome and Firefox.
-- **Editor**: [VSCode](https://code.visualstudio.com/) with JavaScript-oriented settings and essential plugins.
+- **Browsers**: [Brave](https://brave.com/) and Google Chrome.
+- **Editor**: VSCode with essential plugins.
 - **Terminal**: [iTerm](https://iterm2.com/) with the [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) shell and [Dracula](https://draculatheme.com/)-inspired theme.
 - **Windows manager**: [Rectangle](https://rectangleapp.com/)
 - **Clipboard manager**: [Maccy](https://maccy.app/)
 
 ### CLI tools
 
-[GitHub CLI](https://cli.github.com/), [git-open](https://github.com/paulirish/git-open), [n](https://github.com/tj/n), [wget](https://www.gnu.org/software/wget/), [zoxide](https://github.com/ajeetdsouza/zoxide), [ack](https://linux.die.net/man/1/ack), [bat](https://github.com/sharkdp/bat), [thefuck](https://github.com/nvbn/thefuck), [tldr](https://tldr.sh/)
+[GitHub CLI](https://cli.github.com/), [n](https://github.com/tj/n), [wget](https://www.gnu.org/software/wget/), [zoxide](https://github.com/ajeetdsouza/zoxide), [ack](https://linux.die.net/man/1/ack), [bat](https://github.com/sharkdp/bat), [thefuck](https://github.com/nvbn/thefuck), [tldr](https://tldr.sh/)
 
 ## Installation
 
@@ -30,22 +28,67 @@ Includes my favorite browsers, code editor, a shiny terminal and a bunch of CLI 
 xcode-select --install
 ```
 
-### Clone the Repo
+### Clone the repo
+
+Keep it in the home dir for easy sync.
 
 ```sh
 git clone https://github.com/jarekdanielak/dotfiles.git ~/.dotfiles
 ```
 
-### Execute Install Script
+### Install stuff from Brewfile
 
 ```sh
-bash ~/.dotfiles/install.sh
+brew bundle --file="~/.dotfiles/brew/Brewfile"
 ```
 
-> [!NOTE]  
-> Your files are backed up in `~/.dotfiles-backup` directory. See how to [bring it back](#uninstall).
+### Install oh-my-zsh and plugins
 
-### Set Git User
+#### oh my zsh
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+#### zsh-you-should-use
+
+```sh
+git clone https://github.com/MichaelAquilina/zsh-you-should-use.git ~/.oh-my-zsh/custom/plugins/you-should-use
+```
+
+#### zsh-syntax-highlighting
+
+```sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
+
+#### zsh-autosuggestions
+
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+```
+
+#### zsh-history-substring-search
+
+```sh
+git clone https://github.com/zsh-users/zsh-history-substring-search ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search
+```
+
+### Copy .zshrc
+
+```sh
+cp "~/.dotfiles/home/.zshrc" "~/.zshrc"
+```
+
+### Setup git
+
+#### Copy config
+
+```sh
+cp "~/.dotfiles/home/.gitconfig" "~/.gitconfig"
+```
+
+#### Setup credentials
 
 ```sh
 git config --global user.name "name"
@@ -53,38 +96,15 @@ git config --global user.email "email"
 git config --global github.user "username"
 ```
 
-## Uninstall
-
-Your config is backed up in the `~/.dotfiles-backup` directory.
-
-### Config files
-
-Copy `.zshrc` and `.gitconfig` files back to the home directory.
+### Copy VSCode settings
 
 ```sh
-cp -f ~/.dotfiles-backup/.zshrc ~/
+cp  "~/.dotfiles/vscode/settings.json" "~/Library/Application Support/Code/User/settings.json"
 ```
+
+### Install iTerm theme and settings
 
 ```sh
-cp -f ~/.dotfiles-backup/.gitconfig ~/
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/iterm"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 ```
-
-### VSCode Settings
-
-Copy `settings.json` back to VSCode User directory.
-
-```sh
-cp -f ~/.dotfiles-backup/settings.json ~/Library/Application\ Support/Code/User/
-```
-
-### Homebrew
-
-Bring back your old packages.
-
-```sh
-brew bundle cleanup --file='~/.dotfiles-backup/Brewfile' --force
-```
-
-### oh-my-zsh
-
-Refare to [uninstalling oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#uninstalling-oh-my-zsh).
