@@ -2,5 +2,7 @@
 	editor = code --wait
 [pull]
 	rebase = true
+[push]
+	autoSetupRemote = true
 [rebase]
 	autoStash = true
