@@ -1,7 +1,4 @@
 {
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
@@ -22,22 +19,23 @@
   },
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.linkedEditing": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  "eslint.format.enable": true,
   "eslint.validate": [
     "javascript"
   ],
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "diffEditor.experimental.showMoves": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "eslint.format.enable": true,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrains Mono",
+  "json.format.enable": false,
 }

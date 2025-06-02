@@ -77,7 +77,6 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  git-open
   gh
   you-should-use
   zsh-syntax-highlighting

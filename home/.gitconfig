@@ -1,5 +1,3 @@
-[core]
-	editor = code --wait
 [pull]
 	rebase = true
 [push]
