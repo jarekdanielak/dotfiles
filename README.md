@@ -1,4 +1,4 @@
-# Dotfiles
+# .dotfiles
 
 A collection of config files to quickly set up a fresh macOS development environment, tailored for me.
 
@@ -30,9 +30,9 @@ git clone https://github.com/jarekdanielak/dotfiles.git ~/.dotfiles
 brew bundle --file="~/.dotfiles/brew/Brewfile"
 ```
 
-### Install oh-my-zsh and plugins
+### Install Oh My Zsh and plugins
 
-#### oh my zsh
+#### Oh My Zsh
 
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -50,9 +50,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ~/.oh-my-zsh
 ### Copy config files
 
 ```sh
-cp "~/.dotfiles/home/.zshrc" "~/.zshrc"
-cp "~/.dotfiles/home/.vimrc" "~/.vimrc"
-cp "~/.dotfiles/home/.gitconfig" "~/.gitconfig"
+cp ~/.dotfiles/home/. ~/
 ```
 
 ### Setup git credentials
