@@ -50,7 +50,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ~/.oh-my-zsh
 ### Copy config files
 
 ```sh
-cp ~/.dotfiles/home/. ~/
+cp -r ~/.dotfiles/home/. ~/
 ```
 
 ### Setup git credentials
