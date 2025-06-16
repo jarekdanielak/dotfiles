@@ -11,6 +11,9 @@
   "[scss]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
@@ -21,21 +24,25 @@
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
-  "editor.tabSize": 2,
   "eslint.validate": [
-    "javascript"
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ],
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
   "git.autofetch": true,
   "diffEditor.experimental.showMoves": true,
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
+    "source.fixAll.eslint": "explicit"
   },
-  "eslint.format.enable": true,
   "editor.fontSize": 14,
   "editor.fontFamily": "JetBrains Mono",
   "json.format.enable": false,
-}
+  "explorer.confirmDragAndDrop": false,
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 2,
+  "javascript.preferGoToSourceDefinition": true,
+  }
