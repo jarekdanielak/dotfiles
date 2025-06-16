@@ -1,24 +1,24 @@
 tap "homebrew/bundle"
-brew "ack"
-brew "bash"
-brew "bat"
-brew "gh"
-brew "thefuck"
-brew "tldr"
-brew "n"
-brew "wget"
-brew "zoxide"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
-cask "brave-browser"
-cask "google-chrome"
-cask "kitty"
-cask "licecap"
-cask "maccy"
-cask "monitorcontrol"
-cask "rectangle"
-cask "visual-studio-code"
-vscode "alefragnani.project-manager"
-vscode "dbaeumer.vscode-eslint"
-vscode "github.copilot"
-vscode "github.copilot-chat"
+brew "ack" # better grep
+brew "bash" # GNU bash
+brew "bat" # better cat
+brew "gh" # GitHub CLI
+brew "thefuck" # fix last command with double ESC
+brew "tldr" # simplified --help
+brew "n" # node.js version manager
+brew "wget" # download files from the web
+brew "zoxide" # smarter cd
+brew "zsh-autosuggestions" # zsh plugin for command suggestions
+brew "zsh-syntax-highlighting" # zsh plugin for syntax highlighting
+cask "brave-browser" # cool browser
+cask "google-chrome" # popular browser
+cask "kitty" # terminal emulator
+cask "licecap" # screen to gif recorder
+cask "maccy" # clipboard manager
+cask "monitorcontrol" # control external monitors
+cask "rectangle" # window management
+cask "visual-studio-code" # code editor
+vscode "alefragnani.project-manager" # switch between projects
+vscode "dbaeumer.vscode-eslint" # ESLint for JavaScript
+vscode "github.copilot" # vibe with AI
+vscode "github.copilot-chat" # chat with AI
